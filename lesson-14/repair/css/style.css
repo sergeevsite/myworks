@@ -83,6 +83,7 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-right: 10px;
+  color: #333333;
 }
 
 .hero-text__title {
@@ -140,7 +141,7 @@ img {
           box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .container {
     max-width: 95%;
   }
@@ -175,6 +176,102 @@ img {
   }
   .navbar__logo {
     width: 90px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero-list__image {
+    margin-right: 20px;
+  }
+  .hero-list__text {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero-list__image {
+    margin-right: 20px;
+  }
+  .hero-list__text {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 568px) {
+  .hero {
+    padding: 30px 0;
+  }
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .hero-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .hero-list__item {
+    margin-bottom: 14px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+    max-width: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
