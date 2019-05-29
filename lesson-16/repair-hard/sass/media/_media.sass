@@ -1,0 +1,103 @@
+// Адаптив шапки
+@media (max-width: 1199px)
+  .container
+      max-width: 95%
+@media (max-width: 768px)
+  .container
+      max-width: 95%
+@media (max-width: 567px)
+  .navbar  
+    &__contacts
+      display: none
+@media (max-width: 400px)
+  .container
+      max-width: 90%
+  .navbar
+    padding-top: 15px
+    &__contacts
+      display: none
+    &__button
+      font-size: 10px
+      padding: 15px 30px
+      border-radius: 7px
+    &__logo
+      width: 90px
+// Адаптив блока hero
+@media (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+      align-items: center
+    &-list
+      display: flex
+      justify-content: space-between
+      &__image
+        margin-right: 20px
+      &__text
+        max-width: 150px
+@media (max-width: 768px)
+  .hero
+    &-block
+      flex-direction: column
+      align-items: center
+    &-list
+      display: flex
+      justify-content: space-between
+      &__image
+        margin-right: 20px
+      &__text
+        max-width: 150px
+@media (max-width: 700px)
+  .hero
+    padding: 30px 0
+    &-block
+      flex-direction: column
+      align-items: center
+    &-text
+      &__title
+        font-size: 24px
+        line-height: 30px
+        margin-bottom: 5px
+      &__subtitle
+        font-size: 16px
+        margin-bottom: 28px
+    &-list
+      display: flex
+      flex-direction: column
+      margin-bottom: 20px
+      &__item
+        margin-bottom: 14px
+      &__image
+        margin-right: 15px
+      &__text
+        font-size: 12px
+        max-width: 200px
+// Адаптив блока offer
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 16px
+@media (max-width: 768px)
+  .section
+    padding: 40px 0
+  .offer
+    background: #ffffff
+    &-block
+      width: 100%
+      padding-right: 0
+    &__title
+      font-size: 18px
+      line-height: 20px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 14px
+    &__notification
+      &:first-child
+        margin-top: 23px
+      &:last-child
+        margin-top: 8px
+
