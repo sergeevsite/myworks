@@ -450,7 +450,7 @@ img {
 
 @media (max-width: 390px) {
   .offer__button {
-    padding: 0 60px;
+    font-size: 14px;
   }
   .offer__notification {
     max-width: 100%;
@@ -458,9 +458,20 @@ img {
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 354px) {
+  .offer__input {
+    margin-bottom: 13px;
+  }
   .offer__button {
-    padding: 18px 30px;
+    padding: 0 60px;
+  }
+  .offer__notification {
+    max-width: 100%;
+    width: 250px;
+    padding-left: 5px;
+  }
+  .offer__notification:first-child {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
