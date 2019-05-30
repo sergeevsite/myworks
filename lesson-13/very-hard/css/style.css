@@ -16,7 +16,7 @@ img {
   top: 0;
   right: 21%;
   left: 21%;
-  width: 1170px;
+  max-width: 1170px;
 }
 
 .info {

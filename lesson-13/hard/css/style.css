@@ -7,7 +7,7 @@ img {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -70,13 +70,7 @@ img {
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 95%;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 95%;
+    padding: 0 20px;
   }
 }
 
@@ -87,9 +81,6 @@ img {
 }
 
 @media (max-width: 400px) {
-  .container {
-    max-width: 85%;
-  }
   .navbar {
     padding-top: 15px;
   }
