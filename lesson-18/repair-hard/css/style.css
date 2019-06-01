@@ -95,8 +95,8 @@ img {
 .move-top__button {
   max-width: 60px;
   border: none;
-  border-radius: 15px;
-  background-color: transparent;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .move-top__button:hover {
