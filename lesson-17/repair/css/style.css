@@ -327,6 +327,11 @@ img {
   font-weight: 900;
 }
 
+.modal-dialog__input {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     padding: 0 20px;
