@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // Модальное окно
   var button = $('#button');
   var modal = $('#modal');
   var close = $('#close');
@@ -10,4 +11,5 @@ $(document).ready(function() {
   close.on('click', function() {
     modal.removeClass('modal_active');
   });
+
 });
