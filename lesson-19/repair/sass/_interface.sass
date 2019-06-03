@@ -1,0 +1,60 @@
+*
+  box-sizing: border-box
+body
+  font-family: 'Museo Sans Light', sans-serif
+img
+  max-width: 100%
+.container
+  max-width: 1170px
+  margin: 0 auto
+.button
+  padding: 18px 30px
+  border: none
+  border-radius: 10px
+  background-color: $main-color
+  +bold
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.section
+  padding: 90px 0
+  color: $text-color
+  &-title
+    font-size: 24px
+    +bold
+    text-align: center
+  &-subtitle
+    font-size: 16px
+  &-notification
+    font-size: 15px
+    line-height: 24px
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
+  &:focus
+    outline: none
+    border: 1px solid $main-color
+.move
+  display: none
+  &_none
+    display: block
+  &-top
+    position: fixed
+    bottom: 20px
+    right: 20px
+    &__button
+      max-width: 50px
+      border: none
+      border-radius: 50%
+      background-color: rgba(#ffffff, 0.5)
+      &:hover
+        background-color: rgba(#000, 0.1)
+        cursor: pointer
+      &:focus
+        outline: none
+.arrows
+  &__left, &__right    
+    &:hover
+      cursor: pointer
