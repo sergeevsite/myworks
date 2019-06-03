@@ -17,9 +17,9 @@ $(document).ready(function() {
 
   $(window).scroll(function(){
     if ($(window).scrollTop() > 100) {
-      moveTop.addClass('move_none');
+      moveTop.addClass('move-top__button_none');
     }else{
-        moveTop.removeClass('move_none');
+        moveTop.removeClass('move-top__button_none');
     }
   });
 

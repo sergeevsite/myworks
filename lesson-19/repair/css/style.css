@@ -79,14 +79,6 @@ img {
   border: 1px solid #ffd200;
 }
 
-.move {
-  display: none;
-}
-
-.move_none {
-  display: block;
-}
-
 .move-top {
   position: fixed;
   bottom: 20px;
@@ -94,10 +86,15 @@ img {
 }
 
 .move-top__button {
+  display: none;
   max-width: 50px;
   border: none;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.move-top__button_none {
+  display: block;
 }
 
 .move-top__button:hover {

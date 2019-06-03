@@ -37,18 +37,18 @@ img
     outline: none
     border: 1px solid $main-color
 .move
-  display: none
-  &_none
-    display: block
   &-top
     position: fixed
     bottom: 20px
     right: 20px
     &__button
+      display: none
       max-width: 50px
       border: none
       border-radius: 50%
       background-color: rgba(#ffffff, 0.5)
+      &_none
+        display: block
       &:hover
         background-color: rgba(#000, 0.1)
         cursor: pointer
