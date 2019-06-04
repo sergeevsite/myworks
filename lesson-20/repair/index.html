@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
   <nav class="navbar">
@@ -41,19 +42,19 @@
             <h1 class="hero-text__title">Внутренняя отделка помещений "под ключ"</h1>
             <span class="hero-text__subtitle">с гарантией качества, прописанной в договоре</span>
             <ul class="hero-list">
-              <li class="hero-list__item">
+              <li class="hero-list__item wow fadeInLeft">
                 <div class="hero-list__image">
                   <img src="img/hero/clock.svg" alt="Часы">
                 </div>
                 <span class="hero-list__text">Точно соблюдаем сроки</span>
               </li>
-              <li class="hero-list__item">
+              <li data-wow-delay="0.2s" class="hero-list__item wow fadeInLeft">
                 <div class="hero-list__image">
                   <img src="img/hero/calculator.svg" alt="Калькулятор">
                 </div>
                 <span class="hero-list__text">Рассчитаем смету на работы <br> и материалы в день обращения</span>
               </li>
-              <li class="hero-list__item">
+              <li data-wow-delay="0.4s" class="hero-list__item wow fadeInLeft">
                 <div class="hero-list__image">
                   <img src="img/hero/paint-board.svg" alt="Палитра">
                 </div>
@@ -75,7 +76,7 @@
     <!-- /.hero -->
     <section class="offer section">
       <div class="container">
-        <div class="offer-block">
+        <div class="offer-block wow bounceInUp">
           <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья <br> и реализуем его!</h2>
           <!-- /.section-title -->
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
@@ -112,10 +113,10 @@
           <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt="Интерьер спальни"></div>
         </div>
         <div class="arrows portfolio__arrows">
-          <div class="arrows__left">
+          <div class="arrows__left wow bounceInUp">
             <img src="img/portfolio/left-arrow.png" alt="стрелка влево">
           </div>
-          <div class="arrows__right">
+          <div class="arrows__right wow bounceInUp">
             <img src="img/portfolio/right-arrow.png" alt="стрелка вправо">
           </div>
         </div>
@@ -131,7 +132,7 @@
         <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
         <!-- /.section-subtitle price__subtitle -->
         <div class="cards">
-          <div class="card price__card">
+          <div class="card price__card wow fadeIn">
             <div class="card__image"><img class="card__img" src="img/price/bathroom.jpg" alt="Интерьер 1"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -143,7 +144,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div data-wow-delay="0.2s" class="card price__card wow fadeIn">
             <div class="card__image"><img class="card__img" src="img/price/living.jpg" alt="Интерьер 2"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -155,7 +156,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div data-wow-delay="0.4s" class="card price__card wow fadeIn">
             <div class="card__image"><img class="card__img" src="img/price/office.jpg" alt="Интерьер 3"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -167,7 +168,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div data-wow-delay="0.6s" class="card price__card wow fadeIn">
             <div class="card__image"><img class="card__img" src="img/price/buildings.jpg" alt="Интерьер 4"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -179,7 +180,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div data-wow-delay="0.8s" class="card price__card wow fadeIn">
             <div class="card__image"><img class="card__img" src="img/price/kitchen.jpg" alt="Интерьер 5"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -191,7 +192,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div data-wow-delay="1s" class="card price__card wow fadeIn">
             <div class="card__image"><img class="card__img" src="img/price/houses.jpg" alt="Интерьер 6"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -211,7 +212,7 @@
     <!-- /.section price -->
   </main>
 
-  <div class="modal" id="modal">
+  <div class="modal animated fadeIn" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button>
       <h4 class="modal-dialog__title">Введите свой номер телефона и с вами свяжуться в течение 15 минут</h4>
@@ -261,6 +262,10 @@
   ]
       });
     });
+  </script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
   </script>
 </body>
 </html>

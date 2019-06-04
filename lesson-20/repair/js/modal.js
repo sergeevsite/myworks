@@ -15,11 +15,11 @@ $(document).ready(function() {
   // Кнопка наверх
   var moveTop = $('#top');
 
-  $(window).scroll(function(){
+  $(window).scroll(function() {
     if ($(window).scrollTop() > 100) {
-      moveTop.addClass('move-top__button_none');
+      moveTop.addClass('move-top__button_none animated fadeInUp');
     }else{
-        moveTop.removeClass('move-top__button_none');
+        moveTop.removeClass('move-top__button_none fadeInUp');
     }
   });
 
