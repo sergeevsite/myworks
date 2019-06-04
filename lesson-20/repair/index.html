@@ -237,7 +237,11 @@
   crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script>
+    // Инициализация WOW
+    new WOW().init();
+    // Слайдер
     $(document).ready(function() {
       $('.slider').slick({
         slidesToShow: 3,
@@ -262,10 +266,6 @@
   ]
       });
     });
-  </script>
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
   </script>
 </body>
 </html>
