@@ -91,6 +91,8 @@ img {
   border: none;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 16px 22px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
 
 .move-top__button_none {
@@ -98,7 +100,7 @@ img {
 }
 
 .move-top__button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.02);
   cursor: pointer;
 }
 
