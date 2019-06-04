@@ -113,6 +113,11 @@ img {
   outline: none;
 }
 
+.slick-slide {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
 }
