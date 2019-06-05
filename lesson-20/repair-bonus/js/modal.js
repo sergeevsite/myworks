@@ -18,10 +18,15 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(window).scrollTop() > 100) {
       moveTop.addClass('move-top__button_none animated fadeInUp');
+      moveTop.removeClass('fadeOut');
+    }else if ($(window).scrollTop() < 100) {
+        moveTop.removeClass('fadeInUp'),
+        moveTop.addClass('move-top__button_none fadeOut');
     }else{
-        moveTop.removeClass('move-top__button_none fadeInUp');
+        
     }
   });
+
 
   moveTop.on('click', function(){
     $('body,html').animate({scrollTop:0},600);
