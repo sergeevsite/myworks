@@ -304,10 +304,10 @@
           <div class="form brif__form">
             <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
-            <form action="#">
-              <input type="text" class="input brif__input" placeholder="Введите ваше имя">
-              <input type="tel" class="input brif__input" placeholder="Введите ваш телефон">
-              <input type="email" class="input brif__input" placeholder="Введите ваш E-mail">
+            <form action="#" id="brif-form">
+              <input type="text" name="username" required maxlength="15" class="input brif__input" placeholder="Введите ваше имя">
+              <input type="tel" name="phone" required class="input brif__input phone" placeholder="Введите ваш телефон">
+              <input type="email" name="email" required class="input brif__input" placeholder="Введите ваш E-mail">
               <button class="button brif__button">Рассчитать стоимость</button>
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
             </form>
@@ -347,11 +347,44 @@
   <script src="js/modal.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script>
     // Инициализация WOW
     new WOW().init();
-    // Слайдер
     $(document).ready(function() {
+      // Валидация форм
+      $('#brif-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2
+          },
+          phone: {
+            required: true
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: jQuery.validator.format("Добавить минимум {0} символа")
+          },
+          email: {
+            required: "Заполните поле",
+            email: "Введите корректный email"
+          },
+          phone: {
+            required: "Заполните поле"
+          }
+        }
+      });
+      // Маска для телефона
+      $('.phone').mask('+7 (999) 999-99-99');
+      // Слайдер
       $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
