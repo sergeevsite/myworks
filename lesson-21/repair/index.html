@@ -81,9 +81,9 @@
           <!-- /.section-title -->
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form">
-            <input type="text" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+          <form action="#" class="form offer__form" id="offer-form">
+            <input type="text" name="username" required maxlength="15" class="input offer__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" required class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__form -->
@@ -325,7 +325,7 @@
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button>
       <h4 class="modal-dialog__title">Введите свой номер телефона и с вами свяжуться в течение 15 минут</h4>
-      <input class="input modal-dialog__input" type="tel" placeholder="Введите свой телефон">
+      <input class="input modal-dialog__input phone" name="phone" required type="tel" placeholder="Введите свой телефон">
       <button class="button modal-dialog__button">Отправить</button>
     </div>
     <!-- /.modal-dialog -->
@@ -354,7 +354,7 @@
     new WOW().init();
     $(document).ready(function() {
       // Валидация форм
-      $('#brif-form').validate({
+      $('#brif-form').validate( {
         rules: {
           username: {
             required: true,
@@ -377,6 +377,38 @@
             required: "Заполните поле",
             email: "Введите корректный email"
           },
+          phone: {
+            required: "Заполните поле"
+          }
+        }
+      });
+      $('#offer-form').validate( {
+        rules: {
+          username: {
+            required: true,
+            minlength: 2
+          },
+          phone: {
+            required: true
+          }
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: jQuery.validator.format("Добавить минимум {0} символа")
+          },
+          phone: {
+            required: "Заполните поле"
+          }
+        }
+      });
+      $('#modal').validate( {
+        rules: {
+          phone: {
+            required: true
+          }
+        },
+        messages: {
           phone: {
             required: "Заполните поле"
           }
