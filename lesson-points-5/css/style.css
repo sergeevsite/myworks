@@ -1,0 +1,65 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: 'BebasRegular';
+  src: url("../fonts/BebasRegular/BebasRegular.eot");
+	src: local("BebasRegular"), 
+			 url("../fonts/BebasRegular/BebasRegular.eot?#iefix") format("embedded-opentype"), 
+			 url("../fonts/BebasRegular/BebasRegular.woff") format("woff"), 
+			 url("../fonts/BebasRegular/BebasRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LatoRegular';
+  src: url("../fonts/LatoRegular/LatoRegular.eot");
+	src: local("LatoRegular"), 
+			 url("../fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), 
+			 url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), 
+			 url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+	src: local("BebasRegular"), 
+			 url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"), 
+			 url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"), 
+			 url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-box{
+	padding-top: 2rem;
+}
+.result {
+	margin-bottom: 0;
+	margin-top: 3rem;
+}
+.open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+.bebas-reg {
+	font-family: 'BebasRegular', sans-serif;
+}
+.bad-script {
+	font-family: 'Bad Script', cursive;
+}
+.lobster {
+	font-family: 'Lobster', cursive;
+}
+.lato-reg {
+	font-family: 'LatoRegular', sans-serif;
+}
+.proxima-nova {
+	font-family: 'ProximaNovaRegular', sans-serif;
+}
+.fonts {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2rem;
+}
+small {
+	font-size: 1.3rem;
+}
