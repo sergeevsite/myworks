@@ -1,0 +1,221 @@
+// Адаптив шапки
+@media (max-width: 1200px)
+  .container
+    padding: 0 20px
+@media (max-width: 567px)
+  .navbar  
+    &__contacts
+      display: none
+@media (max-width: 400px)
+  .container
+    padding: 0 18px
+  .navbar
+    padding-top: 15px
+    &__contacts
+      display: none
+    &__button
+      font-size: 10px
+      padding: 15px 26px
+      border-radius: 7px
+    &__logo
+      width: 90px
+// Адаптив блока hero
+@media (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+      align-items: center
+    &-list
+      display: flex
+      justify-content: space-between
+      &__item
+        align-items: flex-start
+        padding-right: 10px
+      &__image
+        max-height: 40px
+        max-width: 40px
+        width: 100%
+        margin-right: 20px
+      &__text
+        max-width: 200px
+@media (max-width: 768px)
+  .hero
+    padding: 30px 0
+    &-block
+      flex-direction: column
+      align-items: center
+    &-text
+      &__title
+        font-size: 24px
+        line-height: 30px
+        margin-bottom: 5px
+      &__subtitle
+        font-size: 16px
+        margin-bottom: 28px
+    &-list
+      display: flex
+      flex-direction: column
+      margin-bottom: 20px
+      &__item
+        align-items: center
+        margin-bottom: 14px
+      &__image
+        margin-right: 15px
+      &__text
+        font-size: 12px
+        max-width: 200px
+        line-height: 15px
+        padding-top: 6px
+// Адаптив блока offer
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 16px
+@media (max-width: 930px)
+  .offer
+    &__button
+      padding: 0 60px
+@media (max-width: 810px)
+  .offer
+    &__button
+      padding: 18px 30px
+    &__notification
+      max-width: 100%
+      &:last-child
+      margin-top: 10px
+@media (max-width: 768px)
+  .section
+    padding: 40px 0
+  .offer
+    background: #ffffff
+    &-block
+      width: 100%
+      padding-right: 0
+    &__title
+      font-size: 18px
+      line-height: 20px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 14px
+    &__notification
+        margin-top: 23px
+        max-width: 50%
+@media (max-width: 390px)
+  .offer
+    &__button
+      font-size: 14px
+    &__notification
+      max-width: 100%
+      &:last-child
+      margin-top: 10px
+@media (max-width: 354px)
+  .offer
+    &__input
+      &:first-child
+      margin-bottom: 13px
+    &__button
+      padding: 0 60px
+    &__notification
+      max-width: 100%
+      width: 250px
+      padding-left: 5px
+      &:first-child
+        margin-top: 20px
+// Адаптив блока price
+@media (max-width: 1200px)
+  .card
+    margin-left: 15px
+    margin-right: 15px
+    &s
+      justify-content: center
+// Адаптив блока steps
+@media (max-width: 1200px)
+  .step
+    flex-basis: 50%
+    margin-bottom: 30px
+    &:after
+      display: none
+    &s
+      &-block
+        justify-content: center
+@media (max-width: 768px)
+  .step
+    margin-bottom: 30px
+    &:after
+      display: none
+    &s
+      &-block
+        flex-direction: column
+// Адаптив блока brif
+@media (max-width: 1200px)
+  .brif
+    &__form
+      padding-left: 30px
+  .interview
+    padding-right: 30px
+    &__title
+      font-size: 20px
+      margin-bottom: 20px
+    &__subtitle
+      margin-bottom: 40px
+    &-list
+      &__counter
+        margin-right: 20px
+      &__text
+        font-size: 14px
+        max-width: 280px
+  .form
+    &__title
+      font-size: 20px
+      margin-bottom: 55px
+    &__subtitle
+      margin-bottom: 45px
+@media (max-width: 1100px)
+  .brif
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: left center, center right
+    background-size: 50%, cover
+    background-repeat: repeat-y, no-repeat
+@media (max-width: 770px)
+  .brif
+    padding-top: 25px
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: top center, center bottom
+    background-size: 100% 50%, cover
+    background-repeat: repeat-x, no-repeat
+    &-block
+      flex-direction: column
+    &__form
+      margin-top: 150px
+      padding: 0 3px
+  .interview
+    padding: 0 3px
+    &__title
+      margin-bottom: 10px
+      padding-right: 20px
+      font-size: 18px
+      line-height: 23px
+    &__subtitle
+      width: 100%
+      max-width: 190px
+      margin-bottom: 40px
+      font-size: 14px
+    &-list
+      &__counter
+        margin-left: 5px
+        margin-right: 10px
+      &__text
+        max-width: 250px
+  .form
+    &__title
+      margin: 0
+      padding-bottom: 20px
+      font-size: 18px
+      line-height: 26px
+    &__subtitle
+      font-size: 14px
+      line-height: 23px
