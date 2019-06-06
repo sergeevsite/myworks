@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Стили для header */
+.header, .shopper {
+  background-color: #f4f5f7;
+}
+.container {
+  width: 1140px;
+  max-width: 96%;
+  padding: 74px 0 191px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #32325f;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #95989a;
+}
+.link {
+  text-decoration: none;
+  margin-left: 20px;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 160px;
+}
+.main-text {
+  width: 50%;
+}
+.subtitle {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.title {
+  display: block;
+  margin-bottom: 26px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.description {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.price-tag {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.price {
+  display: block;
+  margin-bottom: 60px;
+  font-size: 48px;
+}
+.btn {
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+  border-radius: 6px;
+  background-color: #aeaeae;
+  color: #ffffff;
+}
+.btn-order {
+  margin-right: 20px;
+  background-color: #2dce89;
+}
+.btn-listen {
+  background-color: #5e72e4;
+}
+/* Стили для about */
+.container-about {
+  padding: 74px 0 131px;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.info {
+  width: 22%;
+  margin-right: 3%;
+}
+.info-img {
+  width: 75px;
+  height: 85px;
+}
+.info-text {
+  margin: 40px 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+/* Стили для shopper */
+.container-shopper {
+  padding: 74px 0 112px;
+}
+.shopper-photo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.photo {
+  width: 362px;
+  height: 235px;
+  max-width: 100%;
+  margin: 15px 0;
+  object-fit: cover;
+}
+/* Стили для footer */
+.footer {
+  background-color: #32325f;
+}
+.container-footer {
+  padding: 74px 0 100px;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.contact {
+  width: 33%;
+  line-height: 25px;
+}
+.contact-title {
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.contact-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+.contact a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}

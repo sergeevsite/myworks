@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1140px;
+  width: 96%;
+  margin: 0 auto;
+  font-family: "Tahoma", sans-serif;
+}
+/* Блок - карточка товара */
+.block {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.book-img {
+  margin-right: 75px;
+}
+.book-info {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  font-weight: 400;
+}
+.name {
+  margin: 40px 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+.surname {
+  font-size: 30px;
+}
+.description {
+  margin-top: 35px;
+  font-size: 18px;
+  line-height: 27px;
+}
+.price {
+  margin: 40px 0;
+  font-size: 48px;
+  color: #313131;
+}
+.btn-buy {
+  margin-right: 40px;
+  padding: 18px 45px;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  background-color: #f05a22;
+  color: #ffffff;
+}
+.btn-more {
+  padding: 18px 30px;
+  font-size: 24px;
+  font-weight: 700;
+  border: 2px solid #f05a22;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #f05a22;
+}
+/* Блок - доставка и оплата */
+.main-delivery {
+  margin-top: 70px;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+.delivery {
+  display: flex;
+  flex-direction: column;
+}
+.delivery-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.box {
+  margin-bottom: 100px;
+}
+.title {
+  margin-top: 80px;
+  margin-bottom: 90px;
+  text-align: center;
+  font-size: 30px;
+}
+.image {
+  margin-bottom: 20px;
+}
+/* Блок - покупатели */
+.shopper-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  color: #333333;
+}
+.photo-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.photo {
+  padding: 15px 0px;
+}
