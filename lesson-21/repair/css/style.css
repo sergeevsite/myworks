@@ -120,12 +120,30 @@ img {
   cursor: pointer;
 }
 
-.error {
+div.invalid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 14px;
   color: red;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
+
+#offer-username-error {
+  display: block;
+  margin-top: -20px;
+}
+
+#offer-phone-error {
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 
 .navbar {
@@ -297,6 +315,7 @@ img {
 }
 
 .offer__input {
+  margin: 10px 0;
   margin-bottom: 30px;
   width: 240px;
 }
@@ -598,6 +617,7 @@ img {
 }
 
 .brif__form {
+  position: relative;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 210px;
@@ -607,7 +627,7 @@ img {
 .brif__input {
   width: 100%;
   max-width: 370px;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 .brif__button {
@@ -956,9 +976,18 @@ img {
   .form__subtitle {
     margin-bottom: 45px;
   }
+  #offer-username-error {
+    display: block;
+    margin-top: 0;
+  }
+  #offer-phone-error {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .brif {
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: left center, center right;
@@ -982,8 +1011,8 @@ img {
             flex-direction: column;
   }
   .brif__form {
-    margin-top: 150px;
     padding: 0 3px;
+    padding-top: 18fg0px;
   }
   .interview {
     padding: 0 3px;
