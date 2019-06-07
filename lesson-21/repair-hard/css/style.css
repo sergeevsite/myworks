@@ -135,12 +135,15 @@ input.invalid {
   border: 1px solid red;
 }
 
-#offerusername-error {
-  display: none;
+#offer-username-error {
+  display: block;
+  margin-top: -20px;
 }
 
-#offerphone-error {
-  display: none;
+#offer-phone-error {
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 
 .navbar {
@@ -312,6 +315,7 @@ input.invalid {
 }
 
 .offer__input {
+  margin: 10px 0;
   margin-bottom: 30px;
   width: 240px;
 }
@@ -613,6 +617,7 @@ input.invalid {
 }
 
 .brif__form {
+  position: relative;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 210px;
@@ -622,7 +627,7 @@ input.invalid {
 .brif__input {
   width: 100%;
   max-width: 370px;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 .brif__button {
@@ -971,6 +976,15 @@ input.invalid {
   .form__subtitle {
     margin-bottom: 45px;
   }
+  #offer-username-error {
+    display: block;
+    margin-top: 0;
+  }
+  #offer-phone-error {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -997,8 +1011,8 @@ input.invalid {
             flex-direction: column;
   }
   .brif__form {
-    margin-top: 150px;
     padding: 0 3px;
+    padding-top: 180px;
   }
   .interview {
     padding: 0 3px;
