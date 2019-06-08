@@ -87,7 +87,7 @@ img {
 }
 
 .move-top__button {
-  display: block;
+  display: none;
   max-width: 50px;
   border: none;
   border-radius: 50%;
@@ -97,7 +97,7 @@ img {
 }
 
 .move-top__button_none {
-  display: none;
+  display: block;
 }
 
 .move-top__button:hover {

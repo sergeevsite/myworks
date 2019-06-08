@@ -18,18 +18,18 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(window).scrollTop() > 100) {
       moveTop.addClass('animated fadeInUp'),
-      moveTop.removeClass('move-top__button_none fadeOut');
+      moveTop.addClass('move-top__button_none');
+      moveTop.removeClass('fadeOut');
     }else if ($(window).scrollTop() == 0) {
         moveTop.removeClass('fadeInUp'),
         moveTop.addClass('fadeOut');
         setTimeout(function() {
-          moveTop.addClass('move-top__button_none');
+          moveTop.removeClass('move-top__button_none');
         }, 800);
     }else{
 
     }
   });
-
 
   moveTop.on('click', function(){
     $('body,html').animate({scrollTop:0},600);
