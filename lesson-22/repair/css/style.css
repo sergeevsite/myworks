@@ -87,7 +87,7 @@ img {
 }
 
 .move-top__button {
-  display: none;
+  display: block;
   max-width: 50px;
   border: none;
   border-radius: 50%;
@@ -97,7 +97,7 @@ img {
 }
 
 .move-top__button_none {
-  display: block;
+  display: none;
 }
 
 .move-top__button:hover {
@@ -135,12 +135,15 @@ input.invalid {
   border: 1px solid red;
 }
 
-#offerusername-error {
-  display: none;
+#offer-username-error {
+  display: block;
+  margin-top: -20px;
 }
 
-#offerphone-error {
-  display: none;
+#offer-phone-error {
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 
 .navbar {
@@ -312,6 +315,7 @@ input.invalid {
 }
 
 .offer__input {
+  margin: 10px 0;
   margin-bottom: 30px;
   width: 240px;
 }
@@ -613,6 +617,7 @@ input.invalid {
 }
 
 .brif__form {
+  position: relative;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 210px;
@@ -622,7 +627,7 @@ input.invalid {
 .brif__input {
   width: 100%;
   max-width: 370px;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 .brif__button {
@@ -701,6 +706,69 @@ input.invalid {
 
 .form__description {
   display: block;
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  margin-bottom: 100px;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.contacts-list__text a {
+  text-decoration: none;
+  color: #333333;
 }
 
 @media (max-width: 1200px) {
@@ -971,6 +1039,15 @@ input.invalid {
   .form__subtitle {
     margin-bottom: 45px;
   }
+  #offer-username-error {
+    display: block;
+    margin-top: 0;
+  }
+  #offer-phone-error {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -997,8 +1074,8 @@ input.invalid {
             flex-direction: column;
   }
   .brif__form {
-    margin-top: 150px;
     padding: 0 3px;
+    padding-top: 180px;
   }
   .interview {
     padding: 0 3px;
