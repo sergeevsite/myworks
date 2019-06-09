@@ -1,5 +1,5 @@
 .hero
-  padding: 50px 0
+  padding: 48px 0
   background-color: $bg-color
   &-block
     display: flex
@@ -8,13 +8,13 @@
     padding-right: 10px
     color: $text-color
     &__title
-      margin-bottom: 40px
+      margin-bottom: 38px
       font-size: 41px
       line-height: 55px
       +bold
     &__subtitle
       display: inline-block
-      margin-bottom: 65px
+      margin-bottom: 67px
       font-size: 20px
       +bold
   &-list
@@ -23,9 +23,11 @@
     &__item
       display: flex
       align-items: center
-      margin-bottom: 22px
+      margin-bottom: 27px
       &:last-child
         margin-bottom: 0
+      &:nth-child(2)
+        margin-bottom: 22px
     &__image
       display: flex
       justify-content: center
@@ -40,5 +42,6 @@
       line-height: 24px
       max-width: 250px
   &-image
+    padding-left: 10px
     box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
 
