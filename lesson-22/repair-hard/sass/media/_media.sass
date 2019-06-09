@@ -150,6 +150,58 @@
     &s
       &-block
         flex-direction: column
+// Адаптив блока promo
+@media (max-width: 768px)
+  .promo
+    &__text
+      font-size: 18px
+      br
+        display: none
+// Адаптив блока excellence
+@media (max-width: 1200px)
+  .excellence
+    &__card
+      margin-right: 10px
+      &:last-child
+         margin-right: 0 
+@media (max-width: 940px)
+  .excellence
+    &__text
+      padding-top: 19px
+      padding-left: 19px
+      font-size: 14px
+      line-height: 17px
+@media (max-width: 768px)
+  .excellence
+    &__card
+      margin-top: 30px
+      margin-bottom: 10px
+    &-card
+      &s
+        flex-direction: column
+        align-items: center
+// Адаптив блока guarantees
+@media (max-width: 940px)
+  .guarantee
+    margin-right: 10px
+    &:last-child
+      margin-right: 0 
+    &__text
+      font-size: 14px
+      line-height: 17px
+    &s
+      &__title
+        font-size: 18px
+@media (max-width: 768px)
+  .guarantee
+    &s
+      &__title
+        padding: 0 29px
+      &-block
+        flex-direction: column
+    &__text
+      margin-bottom: 44px
+      padding: 0 29px
 // Адаптив блока brif
 @media (max-width: 1200px)
   .brif
