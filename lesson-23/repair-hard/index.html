@@ -310,7 +310,7 @@
 
     <section class="section guarantees">
       <div class="container">
-        <h3 class="section-title guarantees__title">Все наши гарантийные обязательно подробно и прозрачно прописаны в договоре</h3>
+        <h3 class="section-title guarantees__title">Все наши гарантийные обязательcтва подробно и прозрачно описаны в договоре</h3>
         <!-- /.section-title guarantees__title -->
         <div class="guarantees-block">
           <div class="guarantee">
@@ -527,6 +527,7 @@
       $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        variableWidth: true,
         prevArrow: $('.arrows__left'),
         nextArrow: $('.arrows__right'),
         responsive: [
@@ -534,14 +535,16 @@
       breakpoint: 900,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        variableWidth: false
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        variableWidth: false
       }
     },
     {
