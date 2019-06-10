@@ -527,7 +527,6 @@
       $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        variableWidth: true,
         prevArrow: $('.arrows__left'),
         nextArrow: $('.arrows__right'),
         responsive: [
@@ -544,7 +543,16 @@
         slidesToShow: 1,
         slidesToScroll: 1
       }
+    },
+    {
+      breakpoint: 321,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true
+      }
     }
+
   ]
       });
     });
