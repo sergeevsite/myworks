@@ -1,0 +1,448 @@
+// Адаптив шапки
+@media (max-width: 1200px)
+  .container
+    padding: 0 22px
+@media (max-width: 567px)
+  .navbar  
+    &__contacts
+      display: none
+@media (max-width: 400px)
+  .navbar
+    padding: 14px 0
+    &__contacts
+      display: none
+    &__button
+      padding: 15px 26px
+      margin-bottom: 2px
+      font-size: 10px
+      border-radius: 7px
+    &__logo
+      margin-top: 3px
+      width: 90px
+// Адаптив блока hero
+@media (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+      align-items: center
+    &-list
+      display: flex
+      justify-content: space-between
+      &__item
+        align-items: flex-start
+        padding-right: 10px
+      &__image
+        max-height: 40px
+        max-width: 40px
+        width: 100%
+        margin-right: 20px
+      &__text
+        max-width: 200px
+@media (max-width: 768px)
+  .hero
+    padding-top: 30px
+    padding-bottom: 47px
+    &-block
+      flex-direction: column
+      align-items: center
+    &-image
+      padding-left: 0
+      padding-right: 5px
+    &-text
+      padding-right: 0
+      &__title
+        margin-bottom: 8px
+        margin-top: 10px
+        margin-left: 2px
+        font-size: 24px
+        line-height: 30px
+      &__subtitle
+        margin-bottom: 27px
+        margin-left: 5px
+        font-size: 16px
+    &-list
+      display: flex
+      flex-direction: column
+      margin-bottom: 38px
+      margin-left: 2px
+      &__item
+        align-items: center
+        margin-bottom: 20px
+        &:nth-child(2)
+          margin-bottom: 20px
+      &__image
+        margin-right: 15px
+      &__text
+        padding-top: 6px
+        max-width: 200px
+        font-size: 12px
+        line-height: 15px
+// Адаптив блока offer
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 16px
+@media (max-width: 930px)
+  .offer
+    &__button
+      padding: 0 60px
+@media (max-width: 810px)
+  .offer
+    &__button
+      padding: 18px 30px
+    &__notification
+      max-width: 100%
+      &:last-child
+      margin-top: 10px
+@media (max-width: 768px)
+  .section
+    padding: 35px 0
+  .offer
+    background: #ffffff
+    &-block
+      width: 100%
+      padding-right: 0
+    &__title
+      font-size: 18px
+      line-height: 21px
+      margin-bottom: 19px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 17px
+    &__notification
+        margin-top: 23px
+        max-width: 50%
+@media (max-width: 390px)
+  .offer
+    &__button
+      font-size: 14px
+    &__notification
+      max-width: 100%
+      &:last-child
+      margin-top: 10px
+@media (max-width: 354px)
+  .offer
+    padding-bottom: 51px
+    &__input
+      &:first-child
+        margin-bottom: -2px
+    &__button
+      padding: 0 60px
+    &__notification
+      max-width: 100%
+      width: 250px
+      padding-left: 5px
+      padding-right: 10px
+      &:first-child
+        margin-top: 21px
+        margin-bottom: -3px
+// Адаптив блока portfolio
+@media (max-width: 1200px)
+  .portfolio
+    padding-top: 41px
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 40px
+      font-size: 24px
+      line-height: 35px
+    &__arrows
+      margin-top: 47px
+@media (max-width: 768px)
+  .portfolio
+    &__title
+      font-size: 18px
+      line-height: 21px
+@media (max-width: 321px)      
+  .slider__image
+    height: 186px
+    margin-left: 13px
+// Адаптив блока price
+@media (max-width: 1200px)
+  .card
+    margin-left: 15px
+    margin-right: 15px
+    &s
+      justify-content: center
+@media (max-width: 768px)
+  .price
+    padding-bottom: 0
+    &__title
+      margin-top: 13px
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 25px
+    &__subtitle
+      margin-bottom: 60px
+      margin-right: 18px
+      font-size: 14px
+  .card
+    margin-right: 2px
+    margin-left: 2px
+    &:nth-child(2)
+      margin-bottom: 29px
+    &:nth-child(3)
+      margin-bottom: 29px
+    &:nth-child(5)
+      margin-bottom: 28px
+    &__text
+      padding: 29px 24px 33px 26px
+    &__title
+      margin-bottom: 13px
+      font-size: 14px
+// Адаптив блока steps
+@media (max-width: 1200px)
+  .step
+    flex-basis: 50%
+    margin-bottom: 30px
+    &:after
+      display: none
+    &s
+      &-block
+        justify-content: center
+@media (max-width: 768px)
+  .step
+    margin-bottom: 30px
+    &:after
+      display: none
+    &__image
+      margin-bottom: 26px
+      &_margin
+        margin-bottom: 20px
+    &__text
+      font-size: 12px
+      line-height: 16px
+    &s
+      padding-top: 20px
+      padding-bottom: 45px
+      &-block
+        flex-direction: column
+      &__title
+        margin-bottom: 24px
+        font-size: 18px
+        line-height: 22px
+      &__subtitle
+        margin-bottom: 33px
+        font-size: 14px
+// Адаптив блока promo
+@media (max-width: 768px)
+  .promo
+    padding-bottom: 52px
+    &__text
+      margin-top: 36px
+      font-size: 18px
+      line-height: 21px
+// Адаптив блока excellence
+@media (max-width: 1200px)
+  .excellence
+    padding-top: 20px
+    &__card
+      margin-right: 10px
+      &:last-child
+         margin-right: 0 
+@media (max-width: 940px)
+  .excellence
+    &__text
+      padding-top: 19px
+      padding-left: 19px
+      font-size: 14px
+      line-height: 17px
+@media (max-width: 768px)
+  .excellence
+    padding-top: 24px
+    &__card
+      margin-top: 36px
+      margin-bottom: -5px
+      margin-right: 1px
+      margin-left: 1px
+      &:nth-child(2)
+        margin-bottom: -10px
+        margin-top: 30px
+      &:last-child
+         margin-right: 1px 
+    &__text
+      padding-top: 15px
+      padding-left: 20px
+      font-size: 12px
+      max-width: 232px
+    &-card
+      &s
+        flex-direction: column
+        align-items: center
+// Адаптив блока guarantees
+@media (max-width: 940px)
+  .guarantee
+    margin-right: 10px
+    &:last-child
+      margin-right: 0 
+    &__text
+      font-size: 13.5px
+      line-height: 17px
+    &s
+      &__title
+        font-size: 18px
+@media (max-width: 768px)
+  .guarantee
+    &:nth-child(2)
+      margin: 0
+    &__image
+      margin-bottom: 28px
+    &s
+      padding-top: 42px
+      padding-bottom: 40px
+      &__title
+        padding: 0 28px
+        margin-bottom: 50px
+        line-height: 21px
+      &-block
+        flex-direction: column
+    &__text
+      max-width: 268px
+      margin-bottom: 44px
+      padding: 0 17px
+// Адаптив блока brif
+@media (max-width: 1200px)
+  .brif
+    &__form
+      padding-left: 30px
+  .interview
+    padding-right: 30px
+    &__title
+      font-size: 20px
+      margin-bottom: 20px
+    &__subtitle
+      margin-bottom: 40px
+    &-list
+      &__counter
+        margin-right: 20px
+      &__text
+        font-size: 14px
+        max-width: 280px
+  .form
+    &__title
+      font-size: 20px
+      margin-bottom: 55px
+    &__subtitle
+      margin-bottom: 45px
+  #offer-username-error
+    display: block
+    margin-top: 0
+  #offer-phone-error
+    display: block
+    margin-top: 0
+    margin-bottom: 10px
+@media (max-width: 1100px)
+  .brif
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: left center, center right
+    background-size: 50%, cover
+    background-repeat: repeat-y, no-repeat
+@media (max-width: 770px)
+  .brif
+    padding-top: 25px
+    padding-bottom: 32px
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: top center, center bottom
+    background-size: 53% 47%, cover
+    background-repeat: repeat-x, no-repeat
+    &__input
+      margin: 4px 0
+    &__button
+      margin-top: 7px
+      margin-bottom: 24px
+      font-size: 14px
+    &-block
+      flex-direction: column
+    &__form
+      padding: 0 3px
+      padding-top: 180px
+  .interview
+    padding: 0
+    padding-bottom: 31px
+    &__title
+      margin-bottom: 16px
+      padding-right: 20px
+      font-size: 18px
+      line-height: 21px
+    &__subtitle
+      width: 100%
+      max-width: 190px
+      margin-bottom: 38px
+      font-size: 14px
+    &-list
+      &__item
+        align-items: center
+        margin-bottom: 28px
+        &:nth-child(2)
+          margin-bottom: 22px
+        &:nth-child(3)
+          margin-bottom: 25px
+      &__counter
+        margin-right: 8px
+      &__text
+        max-width: 235px
+        font-size: 13.7px
+  .form
+    padding: 0
+    &__title
+      margin: 0
+      margin-top: 63px
+      min-width: 277px
+      padding-bottom: 18px
+      padding-left: 0
+      font-size: 18px
+      line-height: 26px
+    &__subtitle
+      margin-bottom: 24px
+      font-size: 14px
+      line-height: 26px
+    &__description
+      display: inline-block
+      width: 140px
+      font-size: 13.9px
+      line-height: 25px
+
+// Адаптив блока footer
+@media (max-width: 1050px)
+  .contacts
+    padding-left: 60px
+@media (max-width: 768px)
+  .footer
+    display: flex
+    flex-direction: column-reverse
+  .map
+    position: relative
+    width: 100%
+  .contacts
+    padding-left: 0
+    padding-top: 67px
+    flex-basis: 100%
+    &__title
+      margin-bottom: 39px
+      text-align: center
+    &-list
+      display: flex
+      flex-direction: column
+      align-items: center
+@media (max-width: 425px)
+  .contacts
+    padding-left: 3px
+    padding-top: 45px
+    &__title
+      margin-bottom: 32px
+      font-size: 18px
+      text-align: left
+      line-height: 21px
+    &-list
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      &__item
+        margin-bottom: 31px
+      &__icon
+        margin-right: 12px
+  .map
+    margin-top: 12px

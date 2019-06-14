@@ -1,0 +1,43 @@
+.footer
+  position: relative
+.map
+  position: absolute
+  top: 0
+  left: 0
+  width: 50%
+  height: 640px
+.contacts
+  flex-basis: 50%
+  padding-top: 69px
+  padding-left: 213px
+  &__title
+    margin-top: 22px
+    margin-bottom: 90px
+    font-size: 22px
+    line-height: 33px
+    +bold
+  &-block
+    display: flex
+    justify-content: flex-end
+  &-list
+    padding: 0
+    list-style: none
+    &__icon
+      margin-right: 21px
+      margin-top: 7px
+      width: 20px
+      height: 20px
+      line-height: 20px
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 32px
+      &:nth-child(2)
+        margin-bottom: 30px
+    &__text
+      line-height: 25px
+      width: 150px
+      a
+        text-decoration: none
+        color: $text-color
+        
