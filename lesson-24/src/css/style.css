@@ -391,6 +391,10 @@ img {
   cursor: pointer;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .section {
   padding: 90px 0;
   color: #333333;
@@ -461,6 +465,10 @@ img {
   margin-left: 15px;
 }
 
+.slick-slide:focus {
+  outline: none;
+}
+
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
 }
@@ -481,14 +489,15 @@ input.invalid {
 }
 
 #offer-username-error {
-  display: block;
-  margin-top: -20px;
+  position: absolute;
+  bottom: 150px;
+  left: 0;
 }
 
 #offer-phone-error {
-  display: block;
-  margin-top: -20px;
-  margin-bottom: 10px;
+  position: absolute;
+  bottom: 150px;
+  right: 228px;
 }
 
 .animated {
@@ -1164,6 +1173,15 @@ input.invalid {
   border: none;
   border-radius: 20px;
   font-weight: 900;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modal-dialog__close:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .modal-dialog__input {
@@ -1822,6 +1840,17 @@ input.invalid {
   .offer__button {
     font-size: 16px;
   }
+  #offer-username-error {
+    position: inherit;
+    display: block;
+    text-align: center;
+  }
+  #offer-phone-error {
+    position: inherit;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 930px) {
@@ -1895,6 +1924,9 @@ input.invalid {
   .offer__notification:first-child {
     margin-top: 21px;
     margin-bottom: -3px;
+  }
+  #offer-username-error {
+    margin-top: 10px;
   }
 }
 
@@ -2169,15 +2201,6 @@ input.invalid {
   .form__subtitle {
     margin-bottom: 45px;
   }
-  #offer-username-error {
-    display: block;
-    margin-top: 0;
-  }
-  #offer-phone-error {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -2269,10 +2292,16 @@ input.invalid {
     line-height: 26px;
   }
   .form__description {
-    display: inline-block;
-    width: 140px;
+    display: block;
+    margin: 0 auto;
     font-size: 13.9px;
     line-height: 25px;
+  }
+}
+
+@media (max-width: 321px) {
+  .form__description {
+    width: 140px;
   }
 }
 

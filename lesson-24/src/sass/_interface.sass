@@ -16,6 +16,8 @@ img
   &:hover
     background-color: lighten($main-color, 10%)
     cursor: pointer
+  &:focus
+    outline: none
 .section
   padding: 90px 0
   color: $text-color
@@ -62,6 +64,8 @@ img
 .slick-slide 
   margin-right: 15px
   margin-left: 15px
+  &:focus
+    outline: none
 .arrows
   &__left, &__right    
     &:hover
@@ -75,9 +79,10 @@ div.invalid
 input.invalid
   border: 1px solid red
 #offer-username-error
-  display: block
-  margin-top: -20px
+  position: absolute
+  bottom: 150px
+  left: 0
 #offer-phone-error
-  display: block
-  margin-top: -20px
-  margin-bottom: 10px
+  position: absolute
+  bottom: 150px
+  right: 228px

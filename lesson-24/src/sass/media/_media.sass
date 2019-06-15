@@ -86,6 +86,15 @@
       margin-bottom: 10px
     &__button
       font-size: 16px
+  #offer-username-error
+    position: inherit
+    display: block
+    text-align: center
+  #offer-phone-error
+    position: inherit
+    display: block
+    margin-bottom: 10px
+    text-align: center
 @media (max-width: 930px)
   .offer
     &__button
@@ -140,6 +149,8 @@
       &:first-child
         margin-top: 21px
         margin-bottom: -3px
+  #offer-username-error
+    margin-top: 10px
 // Адаптив блока portfolio
 @media (max-width: 1200px)
   .portfolio
@@ -327,13 +338,6 @@
       margin-bottom: 55px
     &__subtitle
       margin-bottom: 45px
-  #offer-username-error
-    display: block
-    margin-top: 0
-  #offer-phone-error
-    display: block
-    margin-top: 0
-    margin-bottom: 10px
 @media (max-width: 1100px)
   .brif
     background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
@@ -400,11 +404,14 @@
       font-size: 14px
       line-height: 26px
     &__description
-      display: inline-block
-      width: 140px
+      display: block
+      margin: 0 auto
       font-size: 13.9px
       line-height: 25px
-
+@media (max-width: 321px)
+  .form
+    &__description
+      width: 140px
 // Адаптив блока footer
 @media (max-width: 1050px)
   .contacts

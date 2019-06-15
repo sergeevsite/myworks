@@ -40,6 +40,13 @@ function minifyHtml() {
 
 exports.minifyHtml = minifyHtml;
 
+function moveIcon() {
+  return src('./src/*.ico') // Выбираем из папки файлы
+    .pipe(dest('dist/')); // Выгружаем в папку 
+}
+
+exports.moveIcon = moveIcon;
+
 function moveFonts() {
   return src('./src/fonts/**/*') // Выбираем из папки файлы
     .pipe(dest('dist/fonts')); // Выгружаем в папку 
@@ -62,7 +69,7 @@ function moveSVG() {
     .pipe(dest('dist/img')); // Выгружаем в папку 
 }
 
-exports.build = series(minifyCss, moveJs, minifyJs, minifyHtml, moveFonts, tinyPng, moveSVG);
+exports.build = series(minifyCss, moveJs, minifyJs, minifyHtml, moveIcon, moveFonts, tinyPng, moveSVG);
 
 
 
